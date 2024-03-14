@@ -21,3 +21,22 @@ These libraries are part of the Python Standard Library and should be available 
 
    ```bash
    python cis_regulatory_element_prediction.py
+
+## Output Format
+The output file cis_elements.txt contains the following columns separated by tabs:
+
+- Start position of the cis-regulatory element in the genome sequence.
+- End position of the cis-regulatory element in the genome sequence.
+- The DNA sequence of the cis-regulatory element.
+- Each line in the file represents a single predicted cis-regulatory element.
+
+## Troubleshooting
+If the MEME command fails or the expected output file is not found, the script will terminate with an error message indicating what went wrong. Ensure that MEME is correctly installed and accessible from your command line.
+
+If there is a mismatch in the number of start positions, end positions, and sequences extracted, the script will also terminate with an error message. Check the MEME output files for any inconsistencies.
+
+## License
+Specify the license under which this script is released, if applicable.
+
+## Contact
+For any questions or issues, please open an issue on the GitHub repository or contact the maintainer directly.
